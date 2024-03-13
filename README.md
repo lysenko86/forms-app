@@ -13,16 +13,15 @@ Odore test task - create a structure without content (only folders and empty fil
     - main file, where we put root DIV element to DOM
 
 - **index.module.scss**
-    - common styles for whole project (styles for html, body, a, variables of colors, etc)
+    - common styles for whole project (styles for HTML, BODY, A, variables of colors, etc)
 
 - each folder contains **index.ts** - it helps to import any file from anywhere with aliases and pretty short path
 
-- since interaces for props in cщmponents uses almost only one time, I don't use names for them - { ... }: { ... }
+- since interfaces for props in components uses almost always only one time, I don't use names for them - { ... }: { ... }
 
 - **src/components**
-    - folder for smart and not reusable (or pretty big components, or components of pages ) components components
-    - here we have App component with styles (it could be some app container)
-    - here should be 2 forms
+    - folder for smart and not reusable components (or pretty big components, or components of pages )
+    - here we have App component with styles (it could be some app container), this App component should contain 2 forms
 
 - **src/sharedComponents**
     - folder for smart reusable components (for example Form)
@@ -45,11 +44,11 @@ Odore test task - create a structure without content (only folders and empty fil
 - **src/uiComponents**
     - folder for dumb components, very local and flexible components without access to outer states, or proviers - just for UI
     - each of them definetely reusable
-    - Input, Buuton - we use them in both forms
+    - Input, Button - we use them in both forms
     - Dropdown - it's for "gender" field
     - Checkbox - you can't signup without agreenment with policy
     - FormContainer - different layouts for fields, it has "children" parameter
 
 - **src/svgComponents**
     - folder for icon-components, I like such using of SVG
-    - such using access us to change color or sizes just passing these parameters
+    - this using helps us to change color or sizes just passing these parameters
